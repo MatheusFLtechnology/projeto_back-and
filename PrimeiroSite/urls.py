@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core.views import  home
+from core.views import  cadastro
 
 urlpatterns = [
-   # path('ola/', olamundo),
-    path('', home),
+  # path('ola/', olamundo),
+   path('', home),
+   path('cadastro/',cadastro),
     
     #path('contato/',contato, name="contato"),
     path('admin/', admin.site.urls),
