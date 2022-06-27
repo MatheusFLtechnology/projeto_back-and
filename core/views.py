@@ -10,11 +10,9 @@ def home(request):
 def olamundo(request):
    return HttpResponse("<h1>ola mundo</h1>")
 
-   
-
 def cadastro(request):
-   return HttpResponse("cadastro")    
-#def contato(request):
-   # return render(request, 'contato.html')
+    return render(request, 'cadastro.html',{'nome':'cadastro'})
+
+   
 
 
