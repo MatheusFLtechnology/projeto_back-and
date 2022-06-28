@@ -13,6 +13,9 @@ def olamundo(request):
 def cadastro(request):
     return render(request, 'cadastro.html',{'nome':'cadastro'})
 
+def masculino(request):
+    return render(request, 'masculino.html',{'nome':'masculino'})
+
    
 
 
