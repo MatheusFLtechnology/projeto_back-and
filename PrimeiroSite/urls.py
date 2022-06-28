@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import  home, cadastro, masculino
+from core.views import  home, cadastro, masculino, feminina, kids
 
 
 urlpatterns = [
@@ -23,6 +23,9 @@ urlpatterns = [
    path('', home),
    path('cadastro/',cadastro),
    path('masculino/',masculino),
+   path('feminina/',feminina),
+    path('kids/',kids),
+
 
     
     #path('contato/',contato, name="contato"),
