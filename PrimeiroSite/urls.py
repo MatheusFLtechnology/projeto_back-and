@@ -21,7 +21,7 @@ from core.views import  home, cadastro, masculino, feminina, kids
 urlpatterns = [
   # path('ola/', olamundo),
    path('', home),
-   path('cadastro/',cadastro),
+   path('register/',cadastro,name='cadastro'),
    path('masculino/',masculino),
    path('feminina/',feminina),
     path('kids/',kids),
