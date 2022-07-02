@@ -15,16 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core.views import  home, cadastro, masculino, feminina, kids
+from core.views import  home, cadastro, masculino, feminina, criancas
 
 
 urlpatterns = [
   # path('ola/', olamundo),
    path('', home),
    path('register/',cadastro,name='cadastro'),
-   path('masculino/',masculino),
-   path('feminina/',feminina),
-    path('kids/',kids),
+   path('man/',masculino,name='masculino'),
+   path('female/',feminina,name='feminina'),
+   path('kids/',criancas, name='criancas'),
 
 
     

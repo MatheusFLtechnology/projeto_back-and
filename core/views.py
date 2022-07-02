@@ -17,8 +17,8 @@ def masculino(request):
     return render(request, 'masculino.html',{'nome':'masculino'})
 def feminina(request):
     return render(request, 'feminina.html',{'nome':'feminina'})  
-def kids(request):
-    return render(request, 'kids.html',{'nome':'kids'})      
+def criancas(request):
+    return render(request, 'kids.html',{'nome':'criancas'})      
 
    
 
