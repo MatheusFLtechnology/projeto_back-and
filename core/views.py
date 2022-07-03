@@ -18,7 +18,9 @@ def masculino(request):
 def feminina(request):
     return render(request, 'feminina.html',{'nome':'feminina'})  
 def criancas(request):
-    return render(request, 'kids.html',{'nome':'criancas'})      
+    return render(request, 'kids.html',{'nome':'criancas'})   
+def compra(request):
+    return render(request, 'compra.html',{'nome':'compra'})          
 
    
 

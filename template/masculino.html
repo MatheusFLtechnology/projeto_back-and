@@ -2,6 +2,14 @@
 {% load static %}
 {% block conteudo%}
 
+<style class="text/css">
+ .rodape
+        {
+            background-color: black;
+            color: white;
+        }
+</style>
+
 <div>
     <div class="container-fluid">
         <div class="row">
@@ -19,7 +27,7 @@
         <div class="row mt-3">
             <div class="col-12 col-lg-3">
                 <div class="card" style="width: 18rem;">
-                    <a href="compra1.html"> <img
+                    <a href="{% url 'compra' %}"> <img
                             src="https://cf.shopee.com.br/file/54d7931c549ce75a6dbbf75e350fbfff"
                             class="card-img-top" alt="..."></a>
                     <div class="card-body">
@@ -29,7 +37,7 @@
                             <button type="button" class="text-center btn btn-secondary">Adicionar ao
                                 carrinho</button>
                         </div><br>
-                        <div class="d-flex justify-content-center"><a href="compra1.html"
+                        <div class="d-flex justify-content-center"><a href="{% url 'compra' %}"
                                 class="btn btn-primary">Comprar</a>
                         </div>
                     </div>

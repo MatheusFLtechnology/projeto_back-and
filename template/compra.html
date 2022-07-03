@@ -1,0 +1,108 @@
+{% extends 'bases/base.html'%}
+{% load static %}
+{% block conteudo%}
+
+<style class="text/css">
+ .rodape
+        {
+            background-color: black;
+            color: white;
+        }
+</style>
+
+<div class="container-fluid">
+    <div class="row mt-6">
+      <div class="col-12 col-lg-6">
+        <p class="text-center"><img src="https://cf.shopee.com.br/file/54d7931c549ce75a6dbbf75e350fbfff"
+            class="img-fluid " width="60%" alt="jaqueta"></p>
+        <h1 class="text-center">Roupas em Promocões</h1>
+        <p class="text-center"> por apenas R$15:90</p>
+        <div class="d-flex justify-content-center">
+          <button type="button" class="text-center btn btn-secondary">Adicionar ao carrinho</button>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="validationCustom02" class="form-label">CPF</label><br>
+            <input type="text" name="cpf" placeholder="000.000.000-00" required>
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                tamanho (P)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Tamanho (M)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Tamnho(G)
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+              <label class="form-check-label" for="flexRadioDefault2">
+                Tamanho(GG)
+              </label>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <select class="form-select" multiple aria-label="multiple select example">
+              <option selected>Avista</option>
+              <option value="1">Cartão</option>
+              <option value="2">pix</option>
+              <option value="3">Boleto</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">ESTADO</label>
+            <select id="inputState" class="form-select" required>
+              <option selected>CEARÁ</option>
+              <option>BAHIA(BA)</option>
+              <option>PERNAMBUCO(PE)</option>
+              <option>RIO GRANDE DO NORTE(RN)</option>
+              <option>PARAIBA(PB)</option>
+              <option>SÃO PAULO(SP)</option>
+              <option>RIO DE JANEIRO(RJ)</option>
+              <option>RIO GRANDE DO SUL(RS)</option>
+              <option>MINAS GERAIS(MG)</option>
+
+
+            </select>
+
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Digite sua cidade</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Comprar</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+{% endblock%}
